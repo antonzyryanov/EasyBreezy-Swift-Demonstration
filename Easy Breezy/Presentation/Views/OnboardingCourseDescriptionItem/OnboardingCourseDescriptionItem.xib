@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingCourseDescriptionItem" customModule="Easy_Breezy" customModuleProvider="target">
+            <connections>
+                <outlet property="courseImage" destination="Sxy-LG-ah3" id="upf-sJ-9d5"/>
+                <outlet property="courseName" destination="XiU-hU-tkC" id="gMi-ms-GHG"/>
+                <outlet property="themesContainerView" destination="7Qv-wJ-cOf" id="rdS-3i-zzi"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HZr-uN-1K6" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" red="0.8784313725490196" green="0.8784313725490196" blue="0.8784313725490196" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AGx-Ho-Cr2" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="849"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mvt-8T-lKj">
+                            <rect key="frame" x="16" y="16" width="361" height="91"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Sxy-LG-ah3">
+                                    <rect key="frame" x="0.0" y="0.0" width="131" height="91"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="131" id="ILM-wW-bXQ"/>
+                                    </constraints>
+                                </imageView>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiU-hU-tkC">
+                                    <rect key="frame" x="147" y="23.5" width="198" height="44"/>
+                                    <string key="text">Introduction to 
+Digital Marketing</string>
+                                    <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="18"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="Sxy-LG-ah3" secondAttribute="bottom" id="1Jy-0e-WNG"/>
+                                <constraint firstItem="XiU-hU-tkC" firstAttribute="leading" secondItem="Sxy-LG-ah3" secondAttribute="trailing" constant="16" id="Btx-oU-ZFK"/>
+                                <constraint firstItem="Sxy-LG-ah3" firstAttribute="top" secondItem="Mvt-8T-lKj" secondAttribute="top" id="ODJ-Pi-HLC"/>
+                                <constraint firstItem="Sxy-LG-ah3" firstAttribute="leading" secondItem="Mvt-8T-lKj" secondAttribute="leading" id="Qcu-gY-TjA"/>
+                                <constraint firstAttribute="trailing" secondItem="XiU-hU-tkC" secondAttribute="trailing" constant="16" id="dQL-bb-DfM"/>
+                                <constraint firstItem="XiU-hU-tkC" firstAttribute="centerY" secondItem="Mvt-8T-lKj" secondAttribute="centerY" id="oMl-6I-mgG"/>
+                                <constraint firstAttribute="height" constant="91" id="q3h-mY-hwa"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Qv-wJ-cOf" userLabel="Themes Container View" customClass="ContainerView" customModule="Easy_Breezy" customModuleProvider="target">
+                            <rect key="frame" x="16" y="123" width="361" height="710"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="Mvt-8T-lKj" firstAttribute="leading" secondItem="AGx-Ho-Cr2" secondAttribute="leading" constant="16" id="3Ha-hF-9Bv"/>
+                        <constraint firstItem="Mvt-8T-lKj" firstAttribute="top" secondItem="AGx-Ho-Cr2" secondAttribute="top" constant="16" id="Eg7-bp-Slk"/>
+                        <constraint firstAttribute="trailing" secondItem="Mvt-8T-lKj" secondAttribute="trailing" constant="16" id="X6T-I3-2o0"/>
+                        <constraint firstAttribute="bottom" secondItem="7Qv-wJ-cOf" secondAttribute="bottom" constant="16" id="dik-QL-3IO"/>
+                        <constraint firstItem="7Qv-wJ-cOf" firstAttribute="leading" secondItem="AGx-Ho-Cr2" secondAttribute="leading" constant="16" id="oA7-rG-0hm"/>
+                        <constraint firstAttribute="trailing" secondItem="7Qv-wJ-cOf" secondAttribute="trailing" constant="16" id="yku-ZI-AIr"/>
+                        <constraint firstItem="7Qv-wJ-cOf" firstAttribute="top" secondItem="Mvt-8T-lKj" secondAttribute="bottom" constant="16" id="zkt-iq-Zv0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="20"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="AGx-Ho-Cr2" secondAttribute="trailing" id="2fI-LL-LbW"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="HZr-uN-1K6" secondAttribute="bottom" id="8QX-kj-c62"/>
+                <constraint firstItem="AGx-Ho-Cr2" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="B3m-Ke-zzN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="HZr-uN-1K6" secondAttribute="trailing" id="Ig8-ev-nTs"/>
+                <constraint firstItem="AGx-Ho-Cr2" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="OfZ-uv-VTA"/>
+                <constraint firstAttribute="bottom" secondItem="AGx-Ho-Cr2" secondAttribute="bottom" constant="3" id="g2I-9f-w2q"/>
+                <constraint firstItem="HZr-uN-1K6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="mFN-Jf-DZh"/>
+                <constraint firstItem="HZr-uN-1K6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="w4M-pZ-BuZ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="11" y="-11"/>
+        </view>
+    </objects>
+</document>

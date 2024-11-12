@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingCourseThemeItem" customModule="Easy_Breezy" customModuleProvider="target">
+            <connections>
+                <outlet property="courseNumber" destination="hCR-3F-gkK" id="f7l-4m-7RG"/>
+                <outlet property="lessonsQuantity" destination="qua-Pv-12f" id="O4W-L6-GUt"/>
+                <outlet property="themeName" destination="F9U-fF-CWD" id="Mym-Gv-TGy"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="158"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wFy-Ln-uRX">
+                    <rect key="frame" x="0.0" y="157" width="367" height="1"/>
+                    <color key="backgroundColor" red="0.92156862745098034" green="0.93333333333333335" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="RIL-mJ-Zan"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hCR-3F-gkK">
+                    <rect key="frame" x="0.0" y="68.5" width="20" height="21"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="18"/>
+                    <color key="textColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn how digital marketing is different from marketing" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F9U-fF-CWD">
+                    <rect key="frame" x="32" y="16" width="319" height="33"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="14"/>
+                    <color key="textColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10 lessons" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qua-Pv-12f">
+                    <rect key="frame" x="32" y="65" width="319" height="14"/>
+                    <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="12"/>
+                    <color key="textColor" red="0.52156862745098043" green="0.5490196078431373" blue="0.58039215686274503" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="hCR-3F-gkK" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="7bU-Lp-wEs"/>
+                <constraint firstItem="F9U-fF-CWD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="7cv-Pc-yCa"/>
+                <constraint firstItem="wFy-Ln-uRX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Ahb-o9-PHd"/>
+                <constraint firstItem="qua-Pv-12f" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="EIo-C5-2pW"/>
+                <constraint firstItem="wFy-Ln-uRX" firstAttribute="top" secondItem="qua-Pv-12f" secondAttribute="bottom" priority="250" constant="16" id="ETA-9I-TlP"/>
+                <constraint firstAttribute="bottom" secondItem="wFy-Ln-uRX" secondAttribute="bottom" id="SXM-mg-Yi8"/>
+                <constraint firstItem="F9U-fF-CWD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="32" id="abd-ay-dRU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="wFy-Ln-uRX" secondAttribute="trailing" id="f2y-Ha-fvN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="F9U-fF-CWD" secondAttribute="trailing" constant="16" id="gOz-0M-qYU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="qua-Pv-12f" secondAttribute="trailing" constant="16" id="hd1-HL-UTP"/>
+                <constraint firstItem="qua-Pv-12f" firstAttribute="top" secondItem="F9U-fF-CWD" secondAttribute="bottom" constant="16" id="mGa-Q1-rSK"/>
+                <constraint firstItem="hCR-3F-gkK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nm1-Fd-cuU"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="60.9375" y="-789.08450704225356"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

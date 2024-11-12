@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+        <array key="Inter-Regular.ttf">
+            <string>Inter-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Loading Process View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoadingProcessViewController" id="Y6W-OH-hqX" customClass="LoadingProcessViewController" customModule="Easy_Breezy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_coub" translatesAutoresizingMaskIntoConstraints="NO" id="cN3-Ct-ae7">
+                                <rect key="frame" x="-100" y="-31" width="400" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="b9g-Qc-YiP"/>
+                                    <constraint firstAttribute="height" constant="400" id="dQp-D8-IGT"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_coub" translatesAutoresizingMaskIntoConstraints="NO" id="BCG-c7-RcM" userLabel="loading_process_view_coub_2">
+                                <rect key="frame" x="203" y="209" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="9bR-j7-bhl"/>
+                                    <constraint firstAttribute="width" constant="200" id="HeH-sj-IQL"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_coub" translatesAutoresizingMaskIntoConstraints="NO" id="Y0u-sB-54v" userLabel="loading_process_view_coub_3">
+                                <rect key="frame" x="-20" y="438" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="MxW-Qi-35i"/>
+                                    <constraint firstAttribute="height" constant="200" id="sSs-hb-vNo"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loading_coub" translatesAutoresizingMaskIntoConstraints="NO" id="SUh-YL-Gef" userLabel="loading_process_view_coub_4">
+                                <rect key="frame" x="63" y="538" width="350" height="350"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="350" id="LkT-K4-ZbO"/>
+                                    <constraint firstAttribute="height" constant="350" id="glm-La-pUU"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QHy-xW-I6P">
+                                <rect key="frame" x="115.66666666666669" y="159" width="162" height="162"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="162" id="0l1-XO-tuI"/>
+                                    <constraint firstAttribute="width" constant="162" id="Twt-vk-TJB"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dWg-Dd-l7S" customClass="CourseProgressBar" customModule="Easy_Breezy" customModuleProvider="target">
+                                <rect key="frame" x="20" y="768" width="353" height="10"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="10" id="Dux-b9-uhs"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25%" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1DG-Cn-DwR">
+                                <rect key="frame" x="146.66666666666666" y="706.66666666666663" width="100" height="29.333333333333371"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="T0h-qz-ZuF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Regular" family="Inter" pointSize="24"/>
+                                <color key="textColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="We are building your optimal learning experience…" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tpA-SD-Xw6">
+                                <rect key="frame" x="21.666666666666657" y="578" width="350" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="OVO-ZC-RPV"/>
+                                    <constraint firstAttribute="width" constant="350" id="xmU-0U-gAa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="32"/>
+                                <color key="textColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.81176470588235294" green="0.8901960784313725" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dWg-Dd-l7S" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="7Jj-lc-ItO"/>
+                            <constraint firstItem="dWg-Dd-l7S" firstAttribute="top" secondItem="1DG-Cn-DwR" secondAttribute="bottom" constant="32" id="DmD-G4-vFk"/>
+                            <constraint firstItem="QHy-xW-I6P" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="100" id="Ev1-P8-ZjG"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="SUh-YL-Gef" secondAttribute="trailing" constant="-20" id="FDL-da-1Vd"/>
+                            <constraint firstItem="tpA-SD-Xw6" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="H3A-n4-Y5t"/>
+                            <constraint firstItem="Y0u-sB-54v" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="-20" id="IZo-yl-Nxf"/>
+                            <constraint firstItem="cN3-Ct-ae7" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" constant="-100" id="KbE-hd-epo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="tpA-SD-Xw6" secondAttribute="bottom" constant="120" id="TxF-Fi-6df"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="dWg-Dd-l7S" secondAttribute="trailing" constant="20" id="XGW-Dg-D01"/>
+                            <constraint firstAttribute="trailing" secondItem="BCG-c7-RcM" secondAttribute="trailing" constant="-10" id="b92-Bk-zya"/>
+                            <constraint firstItem="QHy-xW-I6P" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="bTM-WC-Kuw"/>
+                            <constraint firstItem="cN3-Ct-ae7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="-90" id="daR-tx-6U1"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="SUh-YL-Gef" secondAttribute="bottom" constant="-70" id="hLA-G6-ikD"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Y0u-sB-54v" secondAttribute="bottom" constant="180" id="hLs-q0-W4q"/>
+                            <constraint firstItem="BCG-c7-RcM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="150" id="pxk-CL-j1U"/>
+                            <constraint firstItem="1DG-Cn-DwR" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="vm9-IG-1ej"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="dWg-Dd-l7S" secondAttribute="bottom" constant="40" id="zkr-KF-dVk"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstLoadingProccesCoub" destination="cN3-Ct-ae7" id="PeU-vJ-YzP"/>
+                        <outlet property="fourthLoadingProccesCoub" destination="SUh-YL-Gef" id="ol0-GL-5t9"/>
+                        <outlet property="loaderImageView" destination="QHy-xW-I6P" id="yUq-Jj-Xw0"/>
+                        <outlet property="percentageLabel" destination="1DG-Cn-DwR" id="9m3-cS-Utk"/>
+                        <outlet property="progressBar" destination="dWg-Dd-l7S" id="DwQ-WC-mWq"/>
+                        <outlet property="secondLoadingProccesCoub" destination="BCG-c7-RcM" id="IWr-XK-sj1"/>
+                        <outlet property="thirdLoadingProccesCoub" destination="Y0u-sB-54v" id="SjO-vB-aTZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.671755725190835" y="-34.507042253521128"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="loading_coub" width="416" height="457"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

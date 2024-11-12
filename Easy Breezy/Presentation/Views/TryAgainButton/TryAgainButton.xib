@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TryAgainButton" customModule="Easy_Breezy" customModuleProvider="target">
+            <connections>
+                <outlet property="button" destination="SC4-Uf-Pdw" id="Qh0-Vh-Gpf"/>
+                <outlet property="commentaryArrow" destination="k0D-ye-DYc" id="zhx-kj-N3w"/>
+                <outlet property="label" destination="LRL-Lr-EJo" id="Fus-rU-msV"/>
+                <outlet property="refreshSign" destination="tow-mz-23U" id="iww-lk-xwK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="242" height="20"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SC4-Uf-Pdw">
+                    <rect key="frame" x="0.0" y="0.0" width="242" height="20"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                    <connections>
+                        <action selector="tapAction:" destination="-1" eventType="touchUpInside" id="atd-W7-6nG"/>
+                    </connections>
+                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="refresh_sign" translatesAutoresizingMaskIntoConstraints="NO" id="tow-mz-23U">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="YCV-zl-6X2"/>
+                        <constraint firstAttribute="height" constant="20" id="c7W-UU-ygJ"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Try again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRL-Lr-EJo">
+                    <rect key="frame" x="92" y="1.5" width="58.5" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="commentary_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="k0D-ye-DYc" userLabel="commentary_arrow">
+                    <rect key="frame" x="222" y="0.0" width="20" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="YVy-EU-kTP"/>
+                        <constraint firstAttribute="height" constant="20" id="l0x-PE-5xU"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="tow-mz-23U" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="0K4-Vx-yZD"/>
+                <constraint firstItem="SC4-Uf-Pdw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9tc-cz-woz"/>
+                <constraint firstItem="LRL-Lr-EJo" firstAttribute="centerY" secondItem="SC4-Uf-Pdw" secondAttribute="centerY" id="Gir-FK-mwW"/>
+                <constraint firstItem="k0D-ye-DYc" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="H0I-Zu-d3h"/>
+                <constraint firstItem="tow-mz-23U" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="KKb-dk-3tq"/>
+                <constraint firstItem="SC4-Uf-Pdw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="VEE-ka-ckL"/>
+                <constraint firstItem="LRL-Lr-EJo" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="VyS-cf-QWg"/>
+                <constraint firstItem="k0D-ye-DYc" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="XrG-af-zwx"/>
+                <constraint firstAttribute="bottom" secondItem="k0D-ye-DYc" secondAttribute="bottom" id="bEj-Ea-7sj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SC4-Uf-Pdw" secondAttribute="bottom" id="brT-An-L3j"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="tow-mz-23U" secondAttribute="bottom" id="iuR-c0-NCV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SC4-Uf-Pdw" secondAttribute="trailing" id="jLV-Al-qcg"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="58.125" y="-233.45070422535213"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="commentary_arrow" width="24" height="24"/>
+        <image name="refresh_sign" width="17" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

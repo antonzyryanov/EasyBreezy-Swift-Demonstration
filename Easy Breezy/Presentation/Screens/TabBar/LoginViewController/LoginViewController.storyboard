@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="Y6W-OH-hqX" customClass="LoginViewController" customModule="Easy_Breezy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="LoginView" customModule="Easy_Breezy" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nJB-8X-0TA" customClass="PrimaryButton" customModule="Easy_Breezy" customModuleProvider="target">
+                                <rect key="frame" x="68" y="774" width="278" height="56"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="yTv-8s-m23"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dIC-IT-zQZ">
+                                <rect key="frame" x="0.0" y="44" width="414" height="718"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GYu-yK-Y01" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="718"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8s-TO-KMz" userLabel="OnBoarding Sheet" customClass="OnBoardingSheetView" customModule="Easy_Breezy" customModuleProvider="target">
+                                                <rect key="frame" x="24" y="0.0" width="382" height="697"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="d8s-TO-KMz" firstAttribute="leading" secondItem="GYu-yK-Y01" secondAttribute="leading" constant="24" id="5bG-Cw-neQ"/>
+                                            <constraint firstAttribute="trailing" secondItem="d8s-TO-KMz" secondAttribute="trailing" constant="24" id="GRC-RV-Pcn"/>
+                                            <constraint firstItem="d8s-TO-KMz" firstAttribute="top" secondItem="GYu-yK-Y01" secondAttribute="top" id="RwH-11-zLr"/>
+                                            <constraint firstAttribute="bottom" secondItem="d8s-TO-KMz" secondAttribute="bottom" id="XyH-Ze-yQe"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="GYu-yK-Y01" firstAttribute="leading" secondItem="NqL-wA-SPh" secondAttribute="leading" id="2Oe-mP-4XH"/>
+                                    <constraint firstItem="GYu-yK-Y01" firstAttribute="height" secondItem="Xwl-id-r9y" secondAttribute="height" priority="250" id="7S1-tI-WGo"/>
+                                    <constraint firstItem="GYu-yK-Y01" firstAttribute="trailing" secondItem="NqL-wA-SPh" secondAttribute="trailing" id="BLP-6w-X0U"/>
+                                    <constraint firstItem="GYu-yK-Y01" firstAttribute="bottom" secondItem="NqL-wA-SPh" secondAttribute="bottom" id="ClZ-Ej-hal"/>
+                                    <constraint firstItem="GYu-yK-Y01" firstAttribute="width" secondItem="Xwl-id-r9y" secondAttribute="width" id="Qpa-uD-Yrg"/>
+                                    <constraint firstItem="GYu-yK-Y01" firstAttribute="top" secondItem="NqL-wA-SPh" secondAttribute="top" id="kbU-7Y-3HE"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="NqL-wA-SPh"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="Xwl-id-r9y"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.047058823529411764" green="0.40000000000000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="dIC-IT-zQZ" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="1Oa-sf-K6T"/>
+                            <constraint firstAttribute="trailing" secondItem="dIC-IT-zQZ" secondAttribute="trailing" id="8sm-gw-0BI"/>
+                            <constraint firstItem="dIC-IT-zQZ" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="CGZ-GL-Iya"/>
+                            <constraint firstItem="nJB-8X-0TA" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="68" id="EDW-rH-n8H"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="nJB-8X-0TA" secondAttribute="bottom" constant="32" id="RLb-di-REh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="nJB-8X-0TA" secondAttribute="trailing" constant="68" id="SEE-sn-jo9"/>
+                            <constraint firstItem="nJB-8X-0TA" firstAttribute="top" secondItem="dIC-IT-zQZ" secondAttribute="bottom" constant="12" id="mDZ-Pl-KIH"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="onBoardingSheet" destination="d8s-TO-KMz" id="nLR-GS-pbW"/>
+                            <outlet property="primaryButton" destination="nJB-8X-0TA" id="jNX-CK-m0E"/>
+                        </connections>
+                    </view>
+                    <connections>
+                        <outlet property="mainView" destination="5EZ-qb-Rvc" id="AXd-uk-O5C"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17.39130434782609" y="63.616071428571423"/>
+        </scene>
+    </scenes>
+</document>

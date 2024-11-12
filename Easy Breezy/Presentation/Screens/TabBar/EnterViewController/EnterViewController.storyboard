@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Enter View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="EnterViewController" id="Y6W-OH-hqX" customClass="EnterViewController" customModule="Easy_Breezy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.55000000000000004" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OAi-Zh-1XQ" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                                <rect key="frame" x="119.5" y="52" width="136" height="136"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="136" id="7Uz-Y9-6de"/>
+                                    <constraint firstAttribute="width" constant="136" id="nA0-LU-7fG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="68"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                                        <real key="value" value="0.0"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DpZ-Ez-6Sl" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                                <rect key="frame" x="16" y="371" width="343" height="276"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login or Sign Up" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PU-oC-rAl">
+                                        <rect key="frame" x="16" y="24" width="311" height="29"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uui-MJ-HfQ">
+                                        <rect key="frame" x="16" y="77" width="311" height="38.5"/>
+                                        <string key="text">Login or create an account to become 
+a true marketing pro</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.52156862745098043" green="0.51764705882352935" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9gr-QM-yNq" customClass="PrimaryDarkBlueBottomButton" customModule="Easy_Breezy" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="131.5" width="311" height="58"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="5Fh-ur-BXm"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nkn-Uq-xeO" customClass="SecondaryDarkBlueBottomButton" customModule="Easy_Breezy" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="205.5" width="311" height="58"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="sEK-VC-5g0"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="9gr-QM-yNq" secondAttribute="trailing" constant="16" id="G60-kT-2M3"/>
+                                    <constraint firstItem="2PU-oC-rAl" firstAttribute="leading" secondItem="DpZ-Ez-6Sl" secondAttribute="leading" constant="16" id="H61-Qz-U3A"/>
+                                    <constraint firstItem="Nkn-Uq-xeO" firstAttribute="leading" secondItem="DpZ-Ez-6Sl" secondAttribute="leading" constant="16" id="IT3-zt-eWU"/>
+                                    <constraint firstItem="Nkn-Uq-xeO" firstAttribute="top" secondItem="9gr-QM-yNq" secondAttribute="bottom" constant="16" id="Qjg-tg-msk"/>
+                                    <constraint firstAttribute="trailing" secondItem="2PU-oC-rAl" secondAttribute="trailing" constant="16" id="UIY-J4-9ZL"/>
+                                    <constraint firstItem="9gr-QM-yNq" firstAttribute="leading" secondItem="DpZ-Ez-6Sl" secondAttribute="leading" constant="16" id="gFh-07-Q1F"/>
+                                    <constraint firstItem="9gr-QM-yNq" firstAttribute="top" secondItem="Uui-MJ-HfQ" secondAttribute="bottom" constant="16" id="gio-5g-go4"/>
+                                    <constraint firstAttribute="height" constant="276" id="iOc-ct-gm4"/>
+                                    <constraint firstItem="Uui-MJ-HfQ" firstAttribute="top" secondItem="2PU-oC-rAl" secondAttribute="bottom" constant="24" id="ith-8V-baa"/>
+                                    <constraint firstItem="Uui-MJ-HfQ" firstAttribute="leading" secondItem="DpZ-Ez-6Sl" secondAttribute="leading" constant="16" id="lsd-oC-aim"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nkn-Uq-xeO" secondAttribute="trailing" constant="16" id="mUw-av-GdY"/>
+                                    <constraint firstItem="2PU-oC-rAl" firstAttribute="top" secondItem="DpZ-Ez-6Sl" secondAttribute="top" constant="24" id="nzc-5m-I1y"/>
+                                    <constraint firstAttribute="trailing" secondItem="Uui-MJ-HfQ" secondAttribute="trailing" constant="16" id="vdE-04-xNg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Become Pro Marketer with EasyBreezy Pro" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5A0-es-7HD">
+                                <rect key="frame" x="57.5" y="208" width="260" height="123.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="260" id="vYT-Ks-QQS"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="34"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rounded_logo_small" translatesAutoresizingMaskIntoConstraints="NO" id="dvQ-02-P59">
+                                <rect key="frame" x="75" y="20" width="225" height="200"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="kf6-zT-Cf0"/>
+                                    <constraint firstAttribute="height" constant="200" id="u9O-kc-yiz"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="DpZ-Ez-6Sl" secondAttribute="trailing" constant="16" id="88F-0E-YB9"/>
+                            <constraint firstItem="dvQ-02-P59" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="Ig3-lC-cE3"/>
+                            <constraint firstItem="dvQ-02-P59" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="RlP-mj-mgk"/>
+                            <constraint firstItem="5A0-es-7HD" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="208" id="brb-NW-Ak6"/>
+                            <constraint firstItem="OAi-Zh-1XQ" firstAttribute="centerY" secondItem="dvQ-02-P59" secondAttribute="centerY" id="fXk-FH-Jpw"/>
+                            <constraint firstItem="OAi-Zh-1XQ" firstAttribute="centerX" secondItem="dvQ-02-P59" secondAttribute="centerX" id="ha2-P1-cwW"/>
+                            <constraint firstItem="DpZ-Ez-6Sl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="lEV-Ia-anJ"/>
+                            <constraint firstItem="5A0-es-7HD" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="sQm-yh-RfF"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="DpZ-Ez-6Sl" secondAttribute="bottom" constant="20" id="tqe-s8-k3I"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="alreadyHaveAccountButton" destination="Nkn-Uq-xeO" id="WzZ-n7-hp2"/>
+                        <outlet property="getStartedButton" destination="9gr-QM-yNq" id="Tvc-EK-eyb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-56.799999999999997" y="-28.335832083958024"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rounded_logo_small" width="304" height="295"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

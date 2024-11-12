@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CourseView" customModule="Easy_Breezy" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundView" destination="f2z-yc-ahP" id="DIV-CY-F1s"/>
+                <outlet property="courseProgressBar" destination="tTD-rI-cfI" id="nmZ-iE-BhE"/>
+                <outlet property="imageView" destination="qVa-U6-EUi" id="J3x-yP-d0Z"/>
+                <outlet property="lock" destination="CUL-aK-LPK" id="cSm-j4-5W1"/>
+                <outlet property="nameLabel" destination="e7i-Fc-eUS" id="sbK-tb-lK9"/>
+                <outlet property="percentLabel" destination="yWY-C7-YEj" id="49b-9O-24C"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="166"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f2z-yc-ahP" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="20" width="411" height="146"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="course_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="qVa-U6-EUi">
+                            <rect key="frame" x="267" y="12" width="120" height="90"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="7H7-px-IVx"/>
+                                <constraint firstAttribute="height" constant="90" id="9jJ-NC-Oq5"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e7i-Fc-eUS">
+                            <rect key="frame" x="24" y="21" width="235" height="73"/>
+                            <string key="text">Введение
+в диджитал-маркетинг</string>
+                            <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="20"/>
+                            <color key="textColor" red="0.19607843137254902" green="0.20784313725490194" blue="0.22745098039215686" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="course_lock" translatesAutoresizingMaskIntoConstraints="NO" id="CUL-aK-LPK">
+                            <rect key="frame" x="24" y="98" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="PaB-kD-rFv"/>
+                                <constraint firstAttribute="width" constant="24" id="gsq-5C-Lpx"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yWY-C7-YEj">
+                            <rect key="frame" x="24" y="97.5" width="36" height="24.5"/>
+                            <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="20"/>
+                            <color key="textColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tTD-rI-cfI" customClass="CourseProgressBar" customModule="Easy_Breezy" customModuleProvider="target">
+                            <rect key="frame" x="76" y="108" width="311" height="4"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="4" id="m6J-pj-MyH"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="tTD-rI-cfI" firstAttribute="leading" secondItem="yWY-C7-YEj" secondAttribute="trailing" constant="16" id="01r-sL-ut6"/>
+                        <constraint firstAttribute="trailing" secondItem="qVa-U6-EUi" secondAttribute="trailing" constant="24" id="6HU-gB-Ffs"/>
+                        <constraint firstAttribute="bottom" secondItem="yWY-C7-YEj" secondAttribute="bottom" constant="24" id="8v1-Eb-iaR"/>
+                        <constraint firstItem="qVa-U6-EUi" firstAttribute="leading" secondItem="e7i-Fc-eUS" secondAttribute="trailing" constant="8" id="PqX-oE-ldC"/>
+                        <constraint firstItem="qVa-U6-EUi" firstAttribute="top" secondItem="f2z-yc-ahP" secondAttribute="top" constant="12" id="URg-V5-pga"/>
+                        <constraint firstItem="CUL-aK-LPK" firstAttribute="leading" secondItem="e7i-Fc-eUS" secondAttribute="leading" id="ZHc-s1-1lE"/>
+                        <constraint firstItem="CUL-aK-LPK" firstAttribute="centerY" secondItem="yWY-C7-YEj" secondAttribute="centerY" id="Zqh-64-ron"/>
+                        <constraint firstAttribute="trailing" secondItem="tTD-rI-cfI" secondAttribute="trailing" constant="24" id="hag-rJ-6fu"/>
+                        <constraint firstItem="e7i-Fc-eUS" firstAttribute="top" secondItem="f2z-yc-ahP" secondAttribute="top" constant="21" id="krz-y1-LLb"/>
+                        <constraint firstAttribute="bottom" secondItem="tTD-rI-cfI" secondAttribute="bottom" constant="34" id="oiG-Rg-z4d"/>
+                        <constraint firstItem="e7i-Fc-eUS" firstAttribute="leading" secondItem="f2z-yc-ahP" secondAttribute="leading" constant="24" id="rkE-UN-JLu"/>
+                        <constraint firstItem="yWY-C7-YEj" firstAttribute="leading" secondItem="f2z-yc-ahP" secondAttribute="leading" constant="24" id="yv6-Ol-xcB"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="32"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="DuN-dU-K06" appends="YES" id="oJ2-PY-eqe"/>
+                    </connections>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="f2z-yc-ahP" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6Ub-f6-3Ee"/>
+                <constraint firstItem="f2z-yc-ahP" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="9Rc-yq-3fU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="f2z-yc-ahP" secondAttribute="bottom" id="THY-dP-0u0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f2z-yc-ahP" secondAttribute="trailing" id="zEz-9j-IJv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="128.4375" y="-329.57746478873241"/>
+        </view>
+        <tapGestureRecognizer id="DuN-dU-K06">
+            <connections>
+                <action selector="tapAction:" destination="-1" id="Tsh-2g-KF7"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="course_lock" width="24" height="24"/>
+        <image name="course_placeholder" width="120" height="90"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

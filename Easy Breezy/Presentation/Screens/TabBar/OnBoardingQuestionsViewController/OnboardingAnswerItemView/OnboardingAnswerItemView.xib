@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OnboardingAnswerItemView" customModule="Easy_Breezy" customModuleProvider="target">
+            <connections>
+                <outlet property="answerLabel" destination="PbY-jr-snu" id="VcJ-OO-5a1"/>
+                <outlet property="backgroundShadowView" destination="htg-kG-x6V" id="faT-rS-HVF"/>
+                <outlet property="backgroundView" destination="CLP-F8-9vU" id="XfZ-d4-Xw9"/>
+                <outlet property="chosenIndicator" destination="fHg-aX-DEX" id="z0N-VX-dGp"/>
+                <outlet property="chosenIndicatorBorderView" destination="8Wz-yY-FFD" id="s8w-d5-Zs7"/>
+                <outlet property="emojiImage" destination="cUd-Fn-QgM" id="9x9-lp-Mzb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="126"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n8e-hh-2Iv" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="4" y="4" width="314" height="118"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="htg-kG-x6V" userLabel="Shadow Rounded Corners View" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="118"/>
+                            <color key="backgroundColor" red="0.31372549019607843" green="0.67450980392156867" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CLP-F8-9vU" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="114"/>
+                            <color key="backgroundColor" red="0.78823529411764703" green="0.90196078431372551" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="24"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Wz-yY-FFD" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                            <rect key="frame" x="278" y="49" width="20" height="20"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fHg-aX-DEX" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                                    <rect key="frame" x="3" y="3" width="14" height="14"/>
+                                    <color key="backgroundColor" red="1" green="0.7803921568627451" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="14" id="7aw-rB-xIg"/>
+                                        <constraint firstAttribute="width" constant="14" id="K2F-2J-qed"/>
+                                    </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <real key="value" value="7"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="aBL-y3-MBt"/>
+                                <constraint firstItem="fHg-aX-DEX" firstAttribute="centerY" secondItem="8Wz-yY-FFD" secondAttribute="centerY" id="bLK-1P-N8f"/>
+                                <constraint firstAttribute="width" constant="20" id="kii-Wm-vu3"/>
+                                <constraint firstItem="fHg-aX-DEX" firstAttribute="centerX" secondItem="8Wz-yY-FFD" secondAttribute="centerX" id="lgz-a1-j0T"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderSize">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" red="1" green="0.7803921568627451" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business owner/Entrepreneur" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PbY-jr-snu">
+                            <rect key="frame" x="52" y="24" width="210" height="70"/>
+                            <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="16"/>
+                            <color key="textColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="cUd-Fn-QgM">
+                            <rect key="frame" x="16" y="47" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="NmV-8z-o6j"/>
+                                <constraint firstAttribute="height" constant="24" id="vpN-2u-qSa"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstItem="CLP-F8-9vU" firstAttribute="top" secondItem="n8e-hh-2Iv" secondAttribute="top" id="8bQ-nB-OUH"/>
+                        <constraint firstItem="htg-kG-x6V" firstAttribute="top" secondItem="n8e-hh-2Iv" secondAttribute="top" id="AT0-E1-ElM"/>
+                        <constraint firstAttribute="bottom" secondItem="htg-kG-x6V" secondAttribute="bottom" id="CRd-0A-hcL"/>
+                        <constraint firstAttribute="bottom" secondItem="PbY-jr-snu" secondAttribute="bottom" constant="24" id="CYb-0a-H96"/>
+                        <constraint firstItem="8Wz-yY-FFD" firstAttribute="leading" secondItem="PbY-jr-snu" secondAttribute="trailing" constant="16" id="GHw-Zh-vVm"/>
+                        <constraint firstItem="PbY-jr-snu" firstAttribute="top" secondItem="n8e-hh-2Iv" secondAttribute="top" constant="24" id="GlQ-o9-NeP"/>
+                        <constraint firstItem="PbY-jr-snu" firstAttribute="leading" secondItem="n8e-hh-2Iv" secondAttribute="leading" constant="52" id="Pgp-lP-Fsn"/>
+                        <constraint firstAttribute="trailing" secondItem="8Wz-yY-FFD" secondAttribute="trailing" constant="16" id="Vql-T8-DSW"/>
+                        <constraint firstAttribute="bottom" secondItem="CLP-F8-9vU" secondAttribute="bottom" constant="4" id="cl0-0s-wUw"/>
+                        <constraint firstItem="cUd-Fn-QgM" firstAttribute="centerY" secondItem="PbY-jr-snu" secondAttribute="centerY" id="hUn-8y-xdU"/>
+                        <constraint firstAttribute="trailing" secondItem="CLP-F8-9vU" secondAttribute="trailing" id="ifD-yA-QEP"/>
+                        <constraint firstItem="htg-kG-x6V" firstAttribute="leading" secondItem="n8e-hh-2Iv" secondAttribute="leading" id="lnI-jq-UbS"/>
+                        <constraint firstItem="CLP-F8-9vU" firstAttribute="leading" secondItem="n8e-hh-2Iv" secondAttribute="leading" id="mns-4Y-eZ6"/>
+                        <constraint firstItem="8Wz-yY-FFD" firstAttribute="centerY" secondItem="n8e-hh-2Iv" secondAttribute="centerY" id="q0d-wU-mHo"/>
+                        <constraint firstItem="cUd-Fn-QgM" firstAttribute="leading" secondItem="n8e-hh-2Iv" secondAttribute="leading" constant="16" id="tAL-L3-kMM"/>
+                        <constraint firstAttribute="trailing" secondItem="htg-kG-x6V" secondAttribute="trailing" id="wxy-TE-VQg"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="14"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="YMc-7H-xjX" appends="YES" id="xaq-Bd-j17"/>
+                    </connections>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="n8e-hh-2Iv" secondAttribute="bottom" constant="4" id="51V-Mm-dRp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="n8e-hh-2Iv" secondAttribute="top" constant="-4" id="P3r-VG-InG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="n8e-hh-2Iv" secondAttribute="trailing" constant="4" id="kMI-xu-uRg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="leading" secondItem="n8e-hh-2Iv" secondAttribute="leading" constant="-4" id="lko-Mm-Bg4"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="22.5" y="-455.28169014084506"/>
+        </view>
+        <tapGestureRecognizer id="YMc-7H-xjX">
+            <connections>
+                <action selector="tapAction:" destination="-1" id="NDY-iQ-pZZ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

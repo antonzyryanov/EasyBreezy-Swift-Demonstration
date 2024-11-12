@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Course Intro View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CourseIntroViewController" id="Y6W-OH-hqX" customClass="CourseIntroViewController" customModule="Easy_Breezy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc" customClass="CourseIntroView" customModule="Easy_Breezy" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введение в диджитал-маркетинг" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wrw-Fu-Q7v">
+                                <rect key="frame" x="24" y="156" width="366" height="109.5"/>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="32"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Привет! Это вводный курс в диджитал маркетинг. На этом курсе ты " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pg8-m2-qOo">
+                                <rect key="frame" x="24" y="281.5" width="366" height="36.5"/>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="16"/>
+                                <color key="textColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U43-m7-feo" customClass="PrimaryButton" customModule="Easy_Breezy" customModuleProvider="target">
+                                <rect key="frame" x="24" y="782" width="366" height="56"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="L4u-8r-4yF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="title" value="Start"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p4K-ZQ-Why">
+                                <rect key="frame" x="24" y="342" width="366" height="416"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M5w-Wv-4pv" userLabel="Content View">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="416"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JaK-Pt-Usu" userLabel="Container VIew" customClass="ContainerView" customModule="Easy_Breezy" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="366" height="416"/>
+                                                <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="JaK-Pt-Usu" secondAttribute="bottom" id="AJb-6u-Ns9"/>
+                                            <constraint firstItem="JaK-Pt-Usu" firstAttribute="top" secondItem="M5w-Wv-4pv" secondAttribute="top" id="mW2-2s-oXK"/>
+                                            <constraint firstItem="JaK-Pt-Usu" firstAttribute="leading" secondItem="M5w-Wv-4pv" secondAttribute="leading" id="tCN-5S-dVs"/>
+                                            <constraint firstAttribute="trailing" secondItem="JaK-Pt-Usu" secondAttribute="trailing" id="wIY-ab-jOU"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="M5w-Wv-4pv" firstAttribute="bottom" secondItem="8FW-3Q-TY6" secondAttribute="bottom" id="5pR-qy-nss"/>
+                                    <constraint firstItem="M5w-Wv-4pv" firstAttribute="top" secondItem="8FW-3Q-TY6" secondAttribute="top" id="H7u-3F-0Vb"/>
+                                    <constraint firstItem="M5w-Wv-4pv" firstAttribute="leading" secondItem="8FW-3Q-TY6" secondAttribute="leading" id="LZ2-ax-RGG"/>
+                                    <constraint firstItem="M5w-Wv-4pv" firstAttribute="width" secondItem="pqD-i8-5o1" secondAttribute="width" id="WEd-XE-o3a"/>
+                                    <constraint firstItem="M5w-Wv-4pv" firstAttribute="trailing" secondItem="8FW-3Q-TY6" secondAttribute="trailing" id="eSy-Na-UN1"/>
+                                    <constraint firstItem="M5w-Wv-4pv" firstAttribute="height" secondItem="pqD-i8-5o1" secondAttribute="height" priority="250" id="t6x-xR-eoa"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="8FW-3Q-TY6"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="pqD-i8-5o1"/>
+                            </scrollView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vor-kJ-H4I" customClass="ExerciseTopView" customModule="Easy_Breezy" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="48" width="414" height="100"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0rR-KG-C14"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="U43-m7-feo" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="-24" id="5J6-aE-pOe"/>
+                            <constraint firstItem="U43-m7-feo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="9Qu-7C-rk5"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Wrw-Fu-Q7v" secondAttribute="trailing" constant="24" id="AJb-fZ-usy"/>
+                            <constraint firstItem="Wrw-Fu-Q7v" firstAttribute="top" secondItem="vor-kJ-H4I" secondAttribute="bottom" constant="8" id="BJv-JJ-gHp"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="p4K-ZQ-Why" secondAttribute="trailing" constant="24" id="CRc-Y8-3vW"/>
+                            <constraint firstItem="Wrw-Fu-Q7v" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="DT7-Pi-C0b"/>
+                            <constraint firstItem="vor-kJ-H4I" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="G1H-xa-wHB"/>
+                            <constraint firstItem="vor-kJ-H4I" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="IKt-Oh-c3X"/>
+                            <constraint firstItem="pg8-m2-qOo" firstAttribute="top" secondItem="Wrw-Fu-Q7v" secondAttribute="bottom" constant="16" id="OWC-wA-hOo"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="U43-m7-feo" secondAttribute="trailing" constant="24" id="T2K-On-RVH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vor-kJ-H4I" secondAttribute="trailing" id="Y56-Si-kj3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="pg8-m2-qOo" secondAttribute="trailing" constant="24" id="ZMe-Gi-ARv"/>
+                            <constraint firstItem="U43-m7-feo" firstAttribute="top" secondItem="p4K-ZQ-Why" secondAttribute="bottom" constant="24" id="aKj-HZ-8dk"/>
+                            <constraint firstItem="pg8-m2-qOo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="f4d-k2-ad0"/>
+                            <constraint firstItem="p4K-ZQ-Why" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="xDE-aH-DLR"/>
+                            <constraint firstItem="p4K-ZQ-Why" firstAttribute="top" secondItem="pg8-m2-qOo" secondAttribute="bottom" constant="24" id="xJJ-Me-bdx"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="containerView" destination="JaK-Pt-Usu" id="Phz-bf-OxO"/>
+                            <outlet property="courseNameLabel" destination="Wrw-Fu-Q7v" id="Jks-AA-lAC"/>
+                            <outlet property="descriptionLabel" destination="pg8-m2-qOo" id="vxx-qK-FBO"/>
+                            <outlet property="exerciseTopView" destination="vor-kJ-H4I" id="Xha-8C-wt2"/>
+                            <outlet property="primaryButton" destination="U43-m7-feo" id="BTA-v6-6Hn"/>
+                            <outlet property="scrollView" destination="p4K-ZQ-Why" id="X7X-Ci-h1f"/>
+                        </connections>
+                    </view>
+                    <navigationItem key="navigationItem" id="L6L-0E-KO0"/>
+                    <connections>
+                        <outlet property="mainView" destination="5EZ-qb-Rvc" id="HLg-0N-t35"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1902.8985507246377" y="40.848214285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SocialMediaLoginView" customModule="Easy_Breezy" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="241" height="50"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MhU-DT-cUJ" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_facebook" translatesAutoresizingMaskIntoConstraints="NO" id="LTL-fE-aXe">
+                            <rect key="frame" x="13" y="13" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="PwU-2h-wVF"/>
+                                <constraint firstAttribute="width" constant="24" id="a4r-VD-71h"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="2iT-dd-XTY"/>
+                        <constraint firstItem="LTL-fE-aXe" firstAttribute="centerX" secondItem="MhU-DT-cUJ" secondAttribute="centerX" id="7hz-GY-aHK"/>
+                        <constraint firstItem="LTL-fE-aXe" firstAttribute="centerY" secondItem="MhU-DT-cUJ" secondAttribute="centerY" id="WY4-TO-qMG"/>
+                        <constraint firstAttribute="width" constant="50" id="oZB-l3-cii"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qDX-uc-zfN" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="95.666666666666671" y="0.0" width="50.000000000000014" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="apple_login" translatesAutoresizingMaskIntoConstraints="NO" id="ol3-eW-4J4">
+                            <rect key="frame" x="13" y="13" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="24" id="8iy-YR-2yT"/>
+                                <constraint firstAttribute="width" constant="24" id="jMR-0h-Vhh"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="8Tn-wm-rSM"/>
+                        <constraint firstItem="ol3-eW-4J4" firstAttribute="centerX" secondItem="qDX-uc-zfN" secondAttribute="centerX" id="eK3-G0-bhM"/>
+                        <constraint firstItem="ol3-eW-4J4" firstAttribute="centerY" secondItem="qDX-uc-zfN" secondAttribute="centerY" id="gNf-LI-3zy"/>
+                        <constraint firstAttribute="width" constant="50" id="oNv-3e-18H"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="Oob-Eg-ZRh" appends="YES" id="Ls1-ia-ihE"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UlM-LN-WlX" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="191" y="0.0" width="50" height="50"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_google" translatesAutoresizingMaskIntoConstraints="NO" id="1aG-Mc-9Mo">
+                            <rect key="frame" x="13" y="13" width="24" height="24"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="24" id="Ek3-PA-aav"/>
+                                <constraint firstAttribute="height" constant="24" id="t3Y-hz-pYw"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="7kq-bM-esj"/>
+                        <constraint firstItem="1aG-Mc-9Mo" firstAttribute="centerY" secondItem="UlM-LN-WlX" secondAttribute="centerY" id="CqH-dL-HEk"/>
+                        <constraint firstAttribute="height" constant="50" id="YeM-So-H55"/>
+                        <constraint firstItem="1aG-Mc-9Mo" firstAttribute="centerX" secondItem="UlM-LN-WlX" secondAttribute="centerX" id="rh8-FQ-Nyb"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="25"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="shadowOffsetHeight">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                            <color key="value" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="dJU-Rs-6ws" appends="YES" id="Gfj-5W-HR0"/>
+                    </connections>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UlM-LN-WlX" secondAttribute="trailing" id="93j-AQ-e2h"/>
+                <constraint firstItem="MhU-DT-cUJ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="C7e-Nn-elK"/>
+                <constraint firstItem="UlM-LN-WlX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DKJ-br-sA9"/>
+                <constraint firstItem="qDX-uc-zfN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="QoG-L8-Kdj"/>
+                <constraint firstItem="qDX-uc-zfN" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="RhN-Nq-Adm"/>
+                <constraint firstAttribute="bottom" secondItem="MhU-DT-cUJ" secondAttribute="bottom" id="sLw-3t-Rzd"/>
+                <constraint firstItem="MhU-DT-cUJ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xUF-Mh-8nc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-124.42748091603053" y="-295.07042253521126"/>
+        </view>
+        <tapGestureRecognizer id="dJU-Rs-6ws">
+            <connections>
+                <action selector="googleButtonTapped:" destination="-1" id="4GK-T7-Bw7"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="Oob-Eg-ZRh">
+            <connections>
+                <action selector="appleLoginTapped:" destination="-1" id="mMq-eH-TiX"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="apple_login" width="26" height="26"/>
+        <image name="login_facebook" width="24" height="24"/>
+        <image name="login_google" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

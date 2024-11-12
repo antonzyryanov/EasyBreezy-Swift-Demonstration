@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CourseProgressBar" customModule="Easy_Breezy" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundBarWidth" destination="cSp-6A-KAE" id="7Rt-rP-y5o"/>
+                <outlet property="progressBar" destination="zeO-IE-D1P" id="fY6-p4-AcN"/>
+                <outlet property="progressBarWidth" destination="oOt-sy-FSA" id="Pgz-dT-CKv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="691" height="85"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Eq-3z-M9m" userLabel="Background Bar" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="691" height="85"/>
+                    <color key="backgroundColor" red="0.85098039215686272" green="0.85098039215686272" blue="0.85098039215686272" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zeO-IE-D1P" userLabel="Progress Bar" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="691" height="85"/>
+                    <color key="backgroundColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6Eq-3z-M9m" secondAttribute="trailing" id="2yQ-NH-3Rf"/>
+                <constraint firstAttribute="bottom" secondItem="6Eq-3z-M9m" secondAttribute="bottom" id="52B-eg-QL7"/>
+                <constraint firstItem="zeO-IE-D1P" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="7ye-3X-c5b"/>
+                <constraint firstItem="zeO-IE-D1P" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="8Ue-hx-AWo"/>
+                <constraint firstAttribute="bottom" secondItem="zeO-IE-D1P" secondAttribute="bottom" id="I3w-UE-5tl"/>
+                <constraint firstItem="6Eq-3z-M9m" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="aUt-fq-DkV"/>
+                <constraint firstItem="6Eq-3z-M9m" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="cSp-6A-KAE"/>
+                <constraint firstItem="6Eq-3z-M9m" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nSP-kg-GRw"/>
+                <constraint firstItem="zeO-IE-D1P" firstAttribute="width" secondItem="6Eq-3z-M9m" secondAttribute="width" id="oOt-sy-FSA"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="332.60869565217394" y="-207.92410714285714"/>
+        </view>
+    </objects>
+</document>

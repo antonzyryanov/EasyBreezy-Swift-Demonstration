@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Bold.ttf">
+            <string>Inter-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Feedback View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="FeedbackViewController" id="Y6W-OH-hqX" customClass="FeedbackViewController" customModule="Easy_Breezy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9W-fx-uTX" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                                <rect key="frame" x="34" y="263.66666666666669" width="325" height="325.00000000000006"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feedback_background" translatesAutoresizingMaskIntoConstraints="NO" id="yCz-oT-Eqi">
+                                        <rect key="frame" x="62.666666666666686" y="32" width="200" height="145"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="200" id="YAH-N1-Tnm"/>
+                                            <constraint firstAttribute="height" constant="145" id="zZZ-U3-9Zg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="feedback_star" translatesAutoresizingMaskIntoConstraints="NO" id="abf-ft-Qso">
+                                        <rect key="frame" x="127.66666666666666" y="64.333333333333314" width="80" height="80"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="80" id="9Sg-be-8gJ"/>
+                                            <constraint firstAttribute="height" constant="80" id="rxQ-JG-Zjg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thanks for the feedback!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M7P-Uw-oMQ">
+                                        <rect key="frame" x="27.666666666666657" y="193" width="269.66666666666674" height="26.666666666666657"/>
+                                        <fontDescription key="fontDescription" name="Inter-Bold" family="Inter" pointSize="22"/>
+                                        <color key="textColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FaQ-mT-7qE" customClass="PrimaryDarkBlueBottomButton" customModule="Easy_Breezy" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="250.99999999999994" width="293" height="58"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="58" id="1Mi-wQ-bG1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="FaQ-mT-7qE" firstAttribute="leading" secondItem="e9W-fx-uTX" secondAttribute="leading" constant="16" id="2sT-7w-8Yb"/>
+                                    <constraint firstItem="M7P-Uw-oMQ" firstAttribute="top" secondItem="yCz-oT-Eqi" secondAttribute="bottom" constant="16" id="Apb-3L-6DG"/>
+                                    <constraint firstAttribute="height" constant="325" id="DbC-mQ-4SE"/>
+                                    <constraint firstItem="yCz-oT-Eqi" firstAttribute="top" secondItem="e9W-fx-uTX" secondAttribute="top" constant="32" id="Ldj-OI-L3m"/>
+                                    <constraint firstAttribute="trailing" secondItem="FaQ-mT-7qE" secondAttribute="trailing" constant="16" id="R8b-0P-GLR"/>
+                                    <constraint firstAttribute="width" constant="325" id="RsQ-Vl-IsY"/>
+                                    <constraint firstItem="yCz-oT-Eqi" firstAttribute="centerX" secondItem="e9W-fx-uTX" secondAttribute="centerX" id="U1A-bG-MPY"/>
+                                    <constraint firstItem="abf-ft-Qso" firstAttribute="centerY" secondItem="yCz-oT-Eqi" secondAttribute="centerY" id="hKd-Ww-SnA"/>
+                                    <constraint firstItem="abf-ft-Qso" firstAttribute="centerX" secondItem="yCz-oT-Eqi" secondAttribute="centerX" constant="5" id="kGh-fi-wqa"/>
+                                    <constraint firstItem="M7P-Uw-oMQ" firstAttribute="centerX" secondItem="e9W-fx-uTX" secondAttribute="centerX" id="nlS-SM-CSG"/>
+                                    <constraint firstAttribute="bottom" secondItem="FaQ-mT-7qE" secondAttribute="bottom" constant="16" id="ugh-Qr-nT3"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="e9W-fx-uTX" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="CXZ-cP-GMD"/>
+                            <constraint firstItem="e9W-fx-uTX" firstAttribute="centerY" secondItem="5EZ-qb-Rvc" secondAttribute="centerY" id="gf7-uj-l2c"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="goToMainButton" destination="FaQ-mT-7qE" id="5ha-T8-iHK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-37.404580152671755" y="-28.169014084507044"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="feedback_background" width="199" height="144"/>
+        <image name="feedback_star" width="80" height="80"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

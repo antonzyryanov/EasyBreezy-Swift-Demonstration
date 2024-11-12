@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExerciseTopView" customModule="Easy_Breezy" customModuleProvider="target">
+            <connections>
+                <outlet property="accountButton" destination="MPA-Fe-hpK" id="YPa-Lj-sTL"/>
+                <outlet property="courseProgressBar" destination="LnC-9X-MV1" id="ctb-Wf-brQ"/>
+                <outlet property="lifesView" destination="0lU-6r-5dt" id="OxD-JK-L9Q"/>
+                <outlet property="navigationArrow" destination="TUe-6e-Qv5" id="m8Q-FV-ia2"/>
+                <outlet property="themeName" destination="xNY-o1-gvS" id="J0b-4a-qD4"/>
+                <outlet property="toAllCoursesButton" destination="14Y-Mi-bJb" id="TjN-QQ-1RG"/>
+                <outlet property="toAllCoursesLabel" destination="Yyp-e1-wgD" id="tbd-0m-nOu"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="168"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LnC-9X-MV1" customClass="CourseProgressBar" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="24" y="164" width="316" height="4"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="HOJ-UJ-SCq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0lU-6r-5dt" customClass="LifesView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="210" y="56" width="84" height="18"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="AjQ-pH-of2"/>
+                        <constraint firstAttribute="width" constant="84" id="rAu-QT-GMI"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название темы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNY-o1-gvS">
+                    <rect key="frame" x="24" y="151" width="84" height="13"/>
+                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="11"/>
+                    <color key="textColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MPA-Fe-hpK" userLabel="Account Button">
+                    <rect key="frame" x="304" y="49" width="32" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="D3C-DY-K6x"/>
+                        <constraint firstAttribute="width" constant="32" id="hxT-og-sdq"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain">
+                        <backgroundConfiguration key="background" image="account_logo"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="accountButtonPressed:" destination="-1" eventType="touchUpInside" id="kb1-cZ-hGn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="14Y-Mi-bJb" userLabel="To All Courses Button">
+                    <rect key="frame" x="25" y="56" width="121" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="18" id="E6n-AP-TQi"/>
+                        <constraint firstAttribute="width" constant="121" id="sTS-VC-QQ8"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                    <connections>
+                        <action selector="allCoursesButtonAction:" destination="-1" eventType="touchUpInside" id="gT9-7D-b6s"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To all courses" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yyp-e1-wgD">
+                    <rect key="frame" x="53.5" y="56.5" width="92.5" height="17"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="14"/>
+                    <color key="textColor" red="0.47058823529411764" green="0.49803921568627452" blue="0.54117647058823526" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="navigation_back_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="TUe-6e-Qv5">
+                    <rect key="frame" x="25" y="56" width="18" height="18"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="18" id="5xd-19-nMn"/>
+                        <constraint firstAttribute="height" constant="18" id="VWD-h0-KcF"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="0lU-6r-5dt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="36" id="0X8-nE-FU8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="LnC-9X-MV1" secondAttribute="trailing" constant="24" id="2nq-VG-Nmi"/>
+                <constraint firstItem="MPA-Fe-hpK" firstAttribute="centerY" secondItem="0lU-6r-5dt" secondAttribute="centerY" id="Het-cj-4sz"/>
+                <constraint firstItem="xNY-o1-gvS" firstAttribute="leading" secondItem="LnC-9X-MV1" secondAttribute="leading" id="J52-3A-ulC"/>
+                <constraint firstItem="LnC-9X-MV1" firstAttribute="top" secondItem="xNY-o1-gvS" secondAttribute="bottom" id="Knn-ut-cjs"/>
+                <constraint firstItem="LnC-9X-MV1" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="LSI-yQ-3uL"/>
+                <constraint firstItem="14Y-Mi-bJb" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="36" id="Nl9-Go-lLp"/>
+                <constraint firstItem="TUe-6e-Qv5" firstAttribute="centerY" secondItem="14Y-Mi-bJb" secondAttribute="centerY" id="QCl-dM-8kv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LnC-9X-MV1" secondAttribute="bottom" id="REp-Kg-ORM"/>
+                <constraint firstItem="14Y-Mi-bJb" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="25" id="TLm-fH-dGr"/>
+                <constraint firstAttribute="trailing" secondItem="MPA-Fe-hpK" secondAttribute="trailing" constant="28" id="bvc-LA-dsz"/>
+                <constraint firstItem="TUe-6e-Qv5" firstAttribute="leading" secondItem="14Y-Mi-bJb" secondAttribute="leading" id="d85-Va-3Hz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="0lU-6r-5dt" secondAttribute="trailing" constant="70" id="dhC-71-r31"/>
+                <constraint firstItem="Yyp-e1-wgD" firstAttribute="centerY" secondItem="14Y-Mi-bJb" secondAttribute="centerY" id="g9R-gs-0qZ"/>
+                <constraint firstItem="Yyp-e1-wgD" firstAttribute="trailing" secondItem="14Y-Mi-bJb" secondAttribute="trailing" id="ykE-W8-4Ik"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="172.5" y="-147.88732394366198"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="account_logo" width="32" height="34"/>
+        <image name="navigation_back_arrow" width="24" height="25"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

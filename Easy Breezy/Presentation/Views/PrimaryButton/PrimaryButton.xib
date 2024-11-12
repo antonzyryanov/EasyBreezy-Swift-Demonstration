@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Inter-Medium.ttf">
+            <string>Inter-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PrimaryButton" customModule="Easy_Breezy" customModuleProvider="target">
+            <connections>
+                <outlet property="arrowImage" destination="ybC-fZ-6Ve" id="gYq-tG-4hs"/>
+                <outlet property="roundedCornersView" destination="TfC-5d-nIa" id="Za3-a9-QVq"/>
+                <outlet property="titleLabel" destination="xAF-4k-Xge" id="Xu1-Sc-OGs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="519" height="119"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFE-kN-BhJ" userLabel="Shadow Rounded Corners View" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="4" y="8" width="511" height="111"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TfC-5d-nIa" customClass="RoundedCornersView" customModule="Easy_Breezy" customModuleProvider="target">
+                    <rect key="frame" x="4" y="0.0" width="511" height="113"/>
+                    <color key="backgroundColor" red="0.2196078431372549" green="0.63137254901960782" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="24"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Continue" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAF-4k-Xge">
+                    <rect key="frame" x="207.5" y="42" width="104.5" height="29.5"/>
+                    <fontDescription key="fontDescription" name="Inter-Medium" family="Inter" pointSize="24"/>
+                    <color key="textColor" red="0.94117647058823528" green="0.94117647058823528" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="ybC-fZ-6Ve">
+                    <rect key="frame" x="328" y="42.5" width="28" height="28"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="28" id="SnZ-XF-Zhq"/>
+                        <constraint firstAttribute="height" constant="28" id="py7-CX-AAf"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="TfC-5d-nIa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="4" id="02D-Nm-Y4r"/>
+                <constraint firstItem="ybC-fZ-6Ve" firstAttribute="centerY" secondItem="xAF-4k-Xge" secondAttribute="centerY" id="0MW-qU-p9W"/>
+                <constraint firstItem="eFE-kN-BhJ" firstAttribute="trailing" secondItem="TfC-5d-nIa" secondAttribute="trailing" id="7nG-cG-XzE"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TfC-5d-nIa" secondAttribute="trailing" constant="4" id="MFk-di-u88"/>
+                <constraint firstItem="TfC-5d-nIa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="MkR-nM-sMg"/>
+                <constraint firstItem="xAF-4k-Xge" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="NFK-37-Z0B"/>
+                <constraint firstItem="ybC-fZ-6Ve" firstAttribute="leading" secondItem="xAF-4k-Xge" secondAttribute="trailing" constant="16" id="TvA-zr-ZnH"/>
+                <constraint firstItem="eFE-kN-BhJ" firstAttribute="leading" secondItem="TfC-5d-nIa" secondAttribute="leading" id="YY8-cH-gDo"/>
+                <constraint firstItem="xAF-4k-Xge" firstAttribute="centerY" secondItem="TfC-5d-nIa" secondAttribute="centerY" id="p8m-OZ-1x3"/>
+                <constraint firstItem="eFE-kN-BhJ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="r1l-kx-KyL"/>
+                <constraint firstAttribute="bottom" secondItem="TfC-5d-nIa" secondAttribute="bottom" constant="6" id="tkp-z0-5xe"/>
+                <constraint firstItem="eFE-kN-BhJ" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="zVw-5u-VHz"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="28"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="wmR-67-dzX" appends="YES" id="qGW-f3-nfz"/>
+            </connections>
+            <point key="canvasLocation" x="229.6875" y="-326.93661971830988"/>
+        </view>
+        <tapGestureRecognizer id="wmR-67-dzX">
+            <connections>
+                <action selector="tapAction:" destination="-1" id="oQY-6O-JJT"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="arrow_right" width="29" height="29"/>
+    </resources>
+</document>
